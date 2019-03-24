@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int n,base=1,b=0,r,t,l=0,c=0;
+    scanf("%d",&n);
+    while(n)
+    {
+        r=n%2;
+        b=b+(r*base);
+        n=n/2;
+        base=base*10;
+    }
+    //printf("%d\n",b);
+    t=b;
+    while(t)
+    {
+        t=t/10;
+        l++;
+    }
+    while(b)
+    {
+        r=b%10;
+        if(r==1)
+        {
+            c++;
+        }
+        b=b/10;
+    }
+    printf("%d",c);
+} 
