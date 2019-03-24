@@ -1,15 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int n,p=1,a;
+    int n,k=1,a;
     scanf("%d",&n);
     a=n;
-    while(n>p)
+    while(n>k)
     {
-        p=p*2;
+        k=k*2;
         n--;
     }
-    if(p==a)
+    if(k==a)
     printf("yes");
     else
     printf("no");
